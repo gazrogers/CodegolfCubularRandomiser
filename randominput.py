@@ -76,7 +76,7 @@ def randomisecube(cube):
         solution = str(x) + str(y) + str(z) + rotateFunc[1] + str(4-numRots) +'\n' + solution
     return [generator, solution, newcube]
 
-def verifysoltuion(cube, solution):
+def verifysolution(cube, solution):
     newcube = cube
     funclist = {"X": rotateX, "Y": rotateY, "Z": rotateZ}
     for move in solution.split('\n'):
@@ -97,4 +97,4 @@ print answer[1]
 
 # Code to verify solution - Uncomment/Comment as necessary
 # [cube, solution] = getinput('testsolution.txt')
-# print verifysoltuion(cube, solution)
+# print verifysolution(cube, solution)
